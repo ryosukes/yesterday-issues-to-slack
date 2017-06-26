@@ -15,7 +15,7 @@ function postMessage(slackToken, slackChannel) {
     var yesterday    = now.getFullYear() + '/' + (now.getMonth() + 1)+ '/' + (now.getDate() - 1);
     var messageTitle = yesterday+ 'に登録されたissue一覧\n\n';
 
-    slackApp.postMessage(prop.slackChannel, messageTitle + message, {username: "Life Media bot", icon_emoji: ":airplane_arriving:"});
+    slackApp.postMessage(prop.slackChannel, messageTitle + message, {username: "yesterday issues bot", icon_emoji: ":airplane_arriving:"});
   }
 
   // 以下関数
